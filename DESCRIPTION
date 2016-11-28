@@ -1,0 +1,21 @@
+Package: geofilter
+Type: Package
+Title: 'GeoJSON' Filtering
+Description: 'GeoJSON' filtering operations.
+Version: 0.0.1.9100
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/geofilter
+BugReports: https://github.com/ropenscilabs/geofilter/issues
+LazyData: true
+Imports:
+    geojson (>= 0.1.0),
+    jsonlite (>= 1.1),
+    jqr (>= 0.2.4),
+    lazyeval
+Suggests:
+    covr,
+    testthat,
+    leaflet
+RoxygenNote: 5.0.1
