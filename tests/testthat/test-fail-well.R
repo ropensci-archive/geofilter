@@ -17,7 +17,7 @@ test_that("sift_client fails well", {
 test_that("sifter fails well", {
   skip_on_cran()
 
-  file <- system.file("examples", "zillow_or.geojson", package = "siftgeojson")
+  file <- system.file("examples", "zillow_or.geojson", package = "geofilter")
   json <- paste0(readLines(file), collapse = "")
 
   expect_equal(sifter(json, COUNTY == asadf), "[]")

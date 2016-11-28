@@ -33,6 +33,13 @@ an object of class \code{character}
 Sift geojson - low level client
 }
 \examples{
+library(jsonlite)
+x <- geofilter_data$filter_features
+prettify(x)
+sift_client(x, ".")
+sift_client(x, "keys")
+
+
 library("leaflet")
 library("geojson")
 
