@@ -5,6 +5,13 @@
 #' @param query query
 #' @return an object of class \code{character}
 #' @examples
+#' library(jsonlite)
+#' x <- geofilter_data$filter_features
+#' prettify(x)
+#' sift_client(x, ".")
+#' sift_client(x, "keys")
+#'
+#'
 #' library("leaflet")
 #' library("geojson")
 #'
