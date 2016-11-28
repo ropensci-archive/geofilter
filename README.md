@@ -2,7 +2,7 @@ geofilter
 =========
 
 
-
+[![Build Status](https://travis-ci.org/ropenscilabs/geofilter.svg?branch=master)](https://travis-ci.org/ropenscilabs/geofilter)
 
 `geofilter` does filtering on GeoJSON
 
