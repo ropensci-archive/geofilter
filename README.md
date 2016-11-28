@@ -6,10 +6,10 @@ geofilter
 
 `geofilter` does filtering on GeoJSON
 
-Filtering is done with [jqr][jqr], an R client for the C library [jq][jq]. We 
-could just parse to R objects with `jsonlite` then operate on lists or conver 
-to other classes, but `jq` allows us to slice and dice/search/etc. geojson 
-(which is just json really) without having to parse the entire json string 
+Filtering is done with [jqr][jqr], an R client for the C library [jq][jq]. We
+could just parse to R objects with `jsonlite` then operate on lists or conver
+to other classes, but `jq` allows us to slice and dice/search/etc. geojson
+(which is just json really) without having to parse the entire json string
 (which is increasingly important as your input GeoJSON gets bigger).
 
 This used to be within the [geoops][geoops] package, but was broken out here.
@@ -103,8 +103,12 @@ leaflet() %>%
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/geofilter/issues).
 * License: MIT
+* Get citation information for `geofilter` in R doing `citation(package = 'geofilter')`
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
 
 [geojsonspec]: http://geojson.org/geojson-spec.html
 [jqr]: https://github.com/ropensci/jqr
-[jqr]: https://github.com/ropenscilabs/geoops
+[geoops]: https://github.com/ropenscilabs/geoops
 [jq]: https://github.com/stedolan/jq
