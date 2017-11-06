@@ -2,7 +2,7 @@ Package: geofilter
 Type: Package
 Title: 'GeoJSON' Filtering
 Description: 'GeoJSON' filtering operations.
-Version: 0.0.1.9100
+Version: 0.0.2.9110
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
