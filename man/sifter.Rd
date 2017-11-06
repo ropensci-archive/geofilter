@@ -2,19 +2,10 @@
 % Please edit documentation in R/sifter.R
 \name{sifter}
 \alias{sifter}
-\alias{sifter.character}
-\alias{sifter.json}
-\alias{sifter.list}
 \alias{sifter_}
 \title{Sift geojson - high level inerface}
 \usage{
 sifter(.data, ...)
-
-\method{sifter}{character}(.data, ...)
-
-\method{sifter}{json}(.data, ...)
-
-\method{sifter}{list}(.data, ...)
 
 sifter_(.data, ..., .dots)
 }

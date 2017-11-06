@@ -2,24 +2,9 @@
 % Please edit documentation in R/sift_client.R
 \name{sift_client}
 \alias{sift_client}
-\alias{sift_client.character}
-\alias{sift_client.default}
-\alias{sift_client.geojson}
-\alias{sift_client.json}
-\alias{sift_client.list}
 \title{Sift geojson - low level client}
 \usage{
 sift_client(x, query)
-
-\method{sift_client}{default}(x, query)
-
-\method{sift_client}{character}(x, query)
-
-\method{sift_client}{json}(x, query)
-
-\method{sift_client}{geojson}(x, query)
-
-\method{sift_client}{list}(x, query)
 }
 \arguments{
 \item{x}{input, one of character string, json, list, or ...}

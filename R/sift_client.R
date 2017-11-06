@@ -59,31 +59,26 @@ sift_client <- function(x, query) {
 }
 
 #' @export
-#' @rdname sift_client
 sift_client.default <- function(x, query) {
   stop("no 'sift_client' method for ", class(x), call. = FALSE)
 }
 
 #' @export
-#' @rdname sift_client
 sift_client.character <- function(x, query) {
   unclassattr(jqr::combine(jqr::jq(x, query)))
 }
 
 #' @export
-#' @rdname sift_client
 sift_client.json <- function(x, query) {
   unclassattr(jqr::combine(jqr::jq(x, query)))
 }
 
 #' @export
-#' @rdname sift_client
 sift_client.geojson <- function(x, query) {
   unclassattr(jqr::combine(jqr::jq(unclass(x), query)))
 }
 
 #' @export
-#' @rdname sift_client
 sift_client.list <- function(x, query) {
   unclassattr(
     jqr::combine(jqr::jq(jsonlite::toJSON(x, auto_unbox = TRUE), query))
