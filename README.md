@@ -2,6 +2,7 @@ geofilter
 =========
 
 
+
 [![Build Status](https://travis-ci.org/ropenscilabs/geofilter.svg?branch=master)](https://travis-ci.org/ropenscilabs/geofilter)
 
 `geofilter` does filtering on GeoJSON
@@ -31,8 +32,6 @@ library("geofilter")
 
 ```r
 x <- "{\"type\":\"FeatureCollection\",\"features\":[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[-99.74,32.45]},\"properties\":{}}]}"
-x <- as.geojson(x)
-#> Error in eval(expr, envir, enclos): could not find function "as.geojson"
 sift_client(x, ".features[].geometry[]")
 #> [1] "[\"Point\", [-99.74,32.45]]"
 ```
@@ -110,5 +109,6 @@ leaflet() %>%
 
 [geojsonspec]: http://geojson.org/geojson-spec.html
 [jqr]: https://github.com/ropensci/jqr
-[geoops]: https://github.com/ropenscilabs/geoops
 [jq]: https://github.com/stedolan/jq
+[geoops]: https://github.com/ropenscilabs/geoops
+
