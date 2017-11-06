@@ -67,4 +67,3 @@ sift_client(x, ".features[].type")
 sift_client(x, ".features[].properties")
 sift_client(x, ".features[].geometry[]")
 }
-

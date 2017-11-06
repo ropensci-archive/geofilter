@@ -54,4 +54,3 @@ leaflet() \%>\%
   addGeoJSON(jsonlite::fromJSON(res, FALSE)) \%>\%
   setView(-122.8, 44.8, zoom = 8)
 }
-
