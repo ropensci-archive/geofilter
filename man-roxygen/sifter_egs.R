@@ -29,3 +29,7 @@
 #'   addTiles() %>%
 #'   addGeoJSON(jsonlite::fromJSON(res, FALSE)) %>%
 #'   setView(-122.8, 44.8, zoom = 8)
+#'
+#' # many counties at once
+#' res <- sifter(json, COUNTY %in% c(Multnomah, X, Y))
+#'
